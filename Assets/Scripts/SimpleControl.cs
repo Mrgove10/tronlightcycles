@@ -3,14 +3,21 @@ using UnityEngine;
 
 public class SimpleControl : MonoBehaviour
 {
+    public GameObject Barrier;
+    public GameObject BarrierSpawnLocation;
     
-    public direction currentDirection;
+   
     [Range(0, 30)] public float runSpeed = 5.0f;
-
+    
+    [SerializeField]
+    private direction wantedDirection;
+    [SerializeField]
+    private direction currentDirection;
     private float horizontal;
     private float vertical;
     private Rigidbody body;
-
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,33 +31,75 @@ public class SimpleControl : MonoBehaviour
 
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
-            currentDirection = direction.right;
+            wantedDirection = direction.right;
         }
 
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
-            currentDirection = direction.left;
+            wantedDirection = direction.left;
         }
 
         if (Input.GetAxisRaw("Vertical") > 0)
         {
-            currentDirection = direction.up;
+            wantedDirection = direction.up;
         }
 
         if (Input.GetAxisRaw("Vertical") < 0)
         {
-            currentDirection = direction.down;
+            wantedDirection = direction.down;
         }
         
-        Debug.Log(currentDirection);
     }
 
     // Update is called once per frame at a fixed interval
     void FixedUpdate()
     {
+        if (checkIfMouvementIsPossible())
+        {
+            currentDirection = wantedDirection;
+        }
         body.velocity = CalculateVector();
+        SpawnBarrier();
     }
 
+    bool checkIfMouvementIsPossible()
+    {
+         switch (currentDirection)
+        {
+            case direction.up when wantedDirection == direction.down:
+            case direction.down when wantedDirection == direction.up:
+            case direction.right when wantedDirection == direction.left:
+            case direction.left when wantedDirection == direction.right:
+                Debug.LogWarning("Ilegal move : Opposite direction");
+                return false;
+            default:
+                return true;
+        }
+        
+    }
+    /*void CalculateRotation()
+    {
+        switch (currentDirection)
+        {
+            case direction.up:
+                this.GetComponent<Transform>().Rotate(Vector3.up,90);
+                break;
+            case direction.down:
+                break;
+            case direction.right:
+                break;
+            case direction.left:
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }*/
+
+    void SpawnBarrier()
+    {
+        Instantiate(Barrier, BarrierSpawnLocation.GetComponent<Transform>().position, Quaternion.identity);
+    }
+    
     Vector3 CalculateVector()
     {
         switch (currentDirection)
