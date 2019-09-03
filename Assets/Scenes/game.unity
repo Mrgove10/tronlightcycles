@@ -546,7 +546,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -873,12 +873,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026995716}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2034725040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2034725040, guid: 248aa1f4effefe6aeb502b600d66db4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3628995011081719234}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3628995011081719234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -899,7 +893,7 @@ PrefabInstance:
     - target: {fileID: 1917206840161342978, guid: 248aa1f4effefe6aeb502b600d66db4a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.106
       objectReference: {fileID: 0}
     - target: {fileID: 1917206840161342978, guid: 248aa1f4effefe6aeb502b600d66db4a,
         type: 3}
@@ -946,17 +940,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4825746946335496914, guid: 248aa1f4effefe6aeb502b600d66db4a,
-        type: 3}
-      propertyPath: Barrier
-      value: 
-      objectReference: {fileID: 5984268383361668671, guid: 0ba5bb496564b872eb1ef8186d63284c,
-        type: 3}
-    - target: {fileID: 4825746946335496914, guid: 248aa1f4effefe6aeb502b600d66db4a,
-        type: 3}
-      propertyPath: BarrierSpawnLocation
-      value: 
-      objectReference: {fileID: 2034725040}
     - target: {fileID: 4825746946335496914, guid: 248aa1f4effefe6aeb502b600d66db4a,
         type: 3}
       propertyPath: runSpeed
