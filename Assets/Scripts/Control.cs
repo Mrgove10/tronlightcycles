@@ -9,11 +9,13 @@ public class Control : MonoBehaviour
 
     public GameObject barrier;
     public GameObject barrierSpawnLocation;
+    public GameObject BarrierContainer;
 
-    [Range(0, 30)] public float runSpeed = 5.0f;
+
+    [Range(0, 30)] public float speed = 5.0f;
 
     public direction wantedDirection;
-
+    private Collider collider;
     private direction currentDirection;
     private float horizontal;
     private float vertical;
@@ -23,6 +25,7 @@ public class Control : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        collider = GetComponent<Collider>();
         body = GetComponent<Rigidbody>();
     }
 
@@ -127,7 +130,7 @@ public class Control : MonoBehaviour
             case direction.Down when wantedDirection == direction.Up:
             case direction.Right when wantedDirection == direction.Left:
             case direction.Left when wantedDirection == direction.Right:
-               // Debug.LogWarning("Illegal move : Opposite direction");
+                // Debug.LogWarning("Illegal move : Opposite direction");
                 return false;
             default:
                 return true;
@@ -136,7 +139,8 @@ public class Control : MonoBehaviour
 
     private void SpawnBarrier()
     {
-        Instantiate(barrier, barrierSpawnLocation.GetComponent<Transform>().position, Quaternion.identity);
+        Instantiate(barrier, barrierSpawnLocation.GetComponent<Transform>().position, Quaternion.identity,
+            BarrierContainer.transform);
     }
 
     private Vector3 CalculateVector()
@@ -146,21 +150,49 @@ public class Control : MonoBehaviour
             case direction.Up:
                 horizontal = 0;
                 vertical = 1;
-                return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
+                return new Vector3(horizontal * speed, 0, vertical * speed);
             case direction.Down:
                 horizontal = 0;
                 vertical = -1;
-                return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
+                return new Vector3(horizontal * speed, 0, vertical * speed);
             case direction.Right:
                 horizontal = 1;
                 vertical = 0;
-                return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
+                return new Vector3(horizontal * speed, 0, vertical * speed);
             case direction.Left:
                 horizontal = -1;
                 vertical = 0;
-                return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
+                return new Vector3(horizontal * speed, 0, vertical * speed);
             default:
                 throw new ArgumentOutOfRangeException();
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        //Check for a match with the specific tag on any GameObject that collides with your GameObject
+        if (other.gameObject.CompareTag("Barrier"))
+        {
+            //If the GameObject has the same tag as specified, output this message in the console
+            Debug.Log("Touched a barrier, end of game");
+            destroyPlayer();
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            //If the GameObject has the same tag as specified, output this message in the console
+            Debug.Log("Touched a Wall, end of game");
+            destroyPlayer();
+        }
+    }
+
+
+    private void destroyPlayer()
+    {
+        Destroy(gameObject);
+        Destroy(BarrierContainer);
     }
 }
