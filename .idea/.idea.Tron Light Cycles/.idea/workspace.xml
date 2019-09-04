@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79aeb68d-b769-404a-a373-e921653093b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/AICycle.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/AICycle.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CycleAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/NewPlayerBrain.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/NewPlayerBrain.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Light Cycle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Light Cycle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CycleAcademy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CycleAcademy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CycleAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CycleAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NewPlayerBrain.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NewPlayerBrain.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RandomAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RandomAI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Cycles.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +30,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Directions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/CycleAgent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unused/Teleportation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C27E1515-D694-401C-B48E-82974E6D3497/98/39c0978a/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Imports/Graphy - Ultimate Stats Monitor/Scene/Color Picker/G_CUIColorPicker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unused/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -119,7 +114,7 @@
       <workItem from="1567542023261" duration="9796000" />
       <workItem from="1567599763079" duration="242000" />
       <workItem from="1567604378531" duration="9609000" />
-      <workItem from="1567630922506" duration="961000" />
+      <workItem from="1567630922506" duration="1580000" />
     </task>
     <servers />
   </component>
@@ -160,19 +155,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs</url>
-          <line>22</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs" initialLine="22">
-            <startOffsets>
-              <option value="492" />
-            </startOffsets>
-            <endOffsets>
-              <option value="493" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -328,9 +328,14 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
-            <e p="CycleAcademy.cs" t="Include" />
-            <e p="CycleAgent.cs" t="Include" />
-            <e p="RandomAI.cs" t="Include" />
+            <e p="Balls" t="Include">
+              <e p="Rl.cs" t="Include" />
+            </e>
+            <e p="cycles" t="Include">
+              <e p="CycleAcademy.cs" t="Include" />
+              <e p="CycleAgent.cs" t="Include" />
+              <e p="RandomAI.cs" t="Include" />
+            </e>
           </e>
           <e p="Control.cs" t="Include" />
           <e p="Directions.cs" t="Include" />
