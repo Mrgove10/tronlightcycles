@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 941078430}
   - component: {fileID: 941078429}
   - component: {fileID: 941078433}
+  - component: {fileID: 941078434}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -232,6 +233,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &941078434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941078428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9868047445f87af9880fde235d7cbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brain: {fileID: 11400000, guid: cafc38a0d8bcacc97b7ae44379cbdae9, type: 2}
+  agentParameters:
+    agentCameras: []
+    agentRenderTextures: []
+    maxStep: 0
+    resetOnDone: 1
+    onDemandDecision: 0
+    numberOfActionsBetweenDecisions: 10
+  Target: {fileID: 1695538673}
+  speed: 10
 --- !u!1 &1012555821
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1610690533}
+  - component: {fileID: 1610690534}
   m_Layer: 0
   m_Name: Academy
   m_TagString: Untagged
@@ -345,6 +369,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610690534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610690532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e13c00384f4d18ad0a9b2e2af54fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastHub:
+    broadcastingBrains:
+    - {fileID: 11400000, guid: 77e85da40f8196b5e91e28cd30ed38b0, type: 2}
+    - {fileID: 11400000, guid: cafc38a0d8bcacc97b7ae44379cbdae9, type: 2}
+    _brainsToControl: []
+  maxSteps: 0
+  trainingConfiguration:
+    width: 80
+    height: 80
+    qualityLevel: 1
+    timeScale: 100
+    targetFrameRate: -1
+  inferenceConfiguration:
+    width: 1280
+    height: 720
+    qualityLevel: 5
+    timeScale: 1
+    targetFrameRate: 60
+  resetParameters:
+    resetParameters: []
 --- !u!1 &1676313406
 GameObject:
   m_ObjectHideFlags: 0
