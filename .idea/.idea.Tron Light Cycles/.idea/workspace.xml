@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79aeb68d-b769-404a-a373-e921653093b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/AICycle.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/AICycle.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CycleAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/NewPlayerBrain.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/NewPlayerBrain.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/vehivule control.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehiculeControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/vehivule control.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehiculeControl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Light Cycle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Light Cycle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,24 +31,49 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehiculeControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Directions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/CycleAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unused/Teleportation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C27E1515-D694-401C-B48E-82974E6D3497/98/39c0978a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Imports/Graphy - Ultimate Stats Monitor/Scene/Color Picker/G_CUIColorPicker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unused/Wall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/vehivule control.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VehiculeControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/direction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SimpleControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Directions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/randomai.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RandomAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleportation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Colisions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Control.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/CycleAgent.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1Q7Kznj3mKlL3xFX38UMiW4NzqJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,7 +111,15 @@
       <option name="presentableId" value="Default" />
       <updated>1567116471459</updated>
       <workItem from="1567116486369" duration="645000" />
-      <workItem from="1567280156014" duration="4709000" />
+      <workItem from="1567280156014" duration="6546000" />
+      <workItem from="1567343579405" duration="6105000" />
+      <workItem from="1567427523380" duration="6205000" />
+      <workItem from="1567457746248" duration="5859000" />
+      <workItem from="1567511919740" duration="3698000" />
+      <workItem from="1567542023261" duration="9796000" />
+      <workItem from="1567599763079" duration="242000" />
+      <workItem from="1567604378531" duration="9609000" />
+      <workItem from="1567630922506" duration="961000" />
     </task>
     <servers />
   </component>
@@ -83,20 +127,31 @@
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="434" y="200" key="SettingsEditor" />
+    <state x="434" y="200" key="SettingsEditor/1920.1080/1920.1080" />
+    <state x="616" y="209" width="692" height="660" key="find.popup" />
+    <state x="616" y="209" width="692" height="660" key="find.popup/1920.1080/1920.1080" />
+    <state x="652" y="254" key="run.anything.popup" />
+    <state x="652" y="254" key="run.anything.popup/1920.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -105,6 +160,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs" initialLine="22">
+            <startOffsets>
+              <option value="492" />
+            </startOffsets>
+            <endOffsets>
+              <option value="493" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

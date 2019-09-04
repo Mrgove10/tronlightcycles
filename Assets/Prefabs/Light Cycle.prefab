@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 6129627896703210066}
   - component: {fileID: 7933440859820516076}
   - component: {fileID: 4825746946335496914}
-  - component: {fileID: 9115271370777008858}
   m_Layer: 0
   m_Name: Light Cycle
   m_TagString: Untagged
@@ -111,21 +110,9 @@ MonoBehaviour:
   player: 1
   barrier: {fileID: 5984268383361668671, guid: 0ba5bb496564b872eb1ef8186d63284c, type: 3}
   barrierSpawnLocation: {fileID: 2034725040}
-  runSpeed: 2
+  BarrierContainer: {fileID: 0}
+  speed: 5
   wantedDirection: 0
---- !u!114 &9115271370777008858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2880895796025039673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1cbff6be0d4629b64378826b5b88c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: {fileID: 0}
 --- !u!1 &3628995011940757296
 GameObject:
   m_ObjectHideFlags: 0
