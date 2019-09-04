@@ -5,13 +5,16 @@ using UnityEngine.UIElements;
 
 public class Control : MonoBehaviour
 {
+    public bool player = true;
+
     public GameObject barrier;
     public GameObject barrierSpawnLocation;
-    
+
     [Range(0, 30)] public float runSpeed = 5.0f;
 
-    [SerializeField] private direction wantedDirection;
-    [SerializeField] private direction currentDirection;
+    public direction wantedDirection;
+
+    private direction currentDirection;
     private float horizontal;
     private float vertical;
     private Rigidbody body;
@@ -27,25 +30,27 @@ public class Control : MonoBehaviour
     private void Update()
     {
         //Debug.Log(Input.GetAxisRaw("Horizontal") + " | " + Input.GetAxisRaw("Vertical"));
-
-        if (Input.GetAxisRaw("Horizontal") > 0)
+        if (player)
         {
-            wantedDirection = direction.right;
-        }
+            if (Input.GetAxisRaw("Horizontal") > 0)
+            {
+                wantedDirection = direction.Right;
+            }
 
-        if (Input.GetAxisRaw("Horizontal") < 0)
-        {
-            wantedDirection = direction.left;
-        }
+            if (Input.GetAxisRaw("Horizontal") < 0)
+            {
+                wantedDirection = direction.Left;
+            }
 
-        if (Input.GetAxisRaw("Vertical") > 0)
-        {
-            wantedDirection = direction.up;
-        }
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                wantedDirection = direction.Up;
+            }
 
-        if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            wantedDirection = direction.down;
+            if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                wantedDirection = direction.Down;
+            }
         }
     }
 
@@ -54,56 +59,59 @@ public class Control : MonoBehaviour
     {
         if (CheckIfMouvementIsPossible())
         {
-            if (currentDirection == direction.up )
+            if (currentDirection == direction.Up)
             {
                 switch (wantedDirection)
                 {
-                    case direction.right:
+                    case direction.Right:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, 90);
                         break;
-                    case direction.left:
+                    case direction.Left:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, -90);
                         break;
                 }
             }
-            if (currentDirection == direction.down )
+
+            if (currentDirection == direction.Down)
             {
                 switch (wantedDirection)
                 {
-                    case direction.right:
+                    case direction.Right:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, -90);
                         break;
-                    case direction.left:
+                    case direction.Left:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, 90);
                         break;
                 }
             }
-            if (currentDirection == direction.right )
+
+            if (currentDirection == direction.Right)
             {
                 switch (wantedDirection)
                 {
-                    case direction.up:
+                    case direction.Up:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, -90);
                         break;
-                    case direction.down:
+                    case direction.Down:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, 90);
                         break;
                 }
             }
-            if (currentDirection == direction.left )
+
+            if (currentDirection == direction.Left)
             {
                 switch (wantedDirection)
                 {
-                    case direction.up:
+                    case direction.Up:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, 90);
                         break;
-                    case direction.down:
+                    case direction.Down:
                         transform.RotateAround(barrierSpawnLocation.transform.position, Vector3.up, -90);
                         break;
                 }
             }
-           
-           
+
+
             currentDirection = wantedDirection;
         }
 
@@ -115,11 +123,11 @@ public class Control : MonoBehaviour
     {
         switch (currentDirection)
         {
-            case direction.up when wantedDirection == direction.down:
-            case direction.down when wantedDirection == direction.up:
-            case direction.right when wantedDirection == direction.left:
-            case direction.left when wantedDirection == direction.right:
-                Debug.LogWarning("Illegal move : Opposite direction");
+            case direction.Up when wantedDirection == direction.Down:
+            case direction.Down when wantedDirection == direction.Up:
+            case direction.Right when wantedDirection == direction.Left:
+            case direction.Left when wantedDirection == direction.Right:
+               // Debug.LogWarning("Illegal move : Opposite direction");
                 return false;
             default:
                 return true;
@@ -135,19 +143,19 @@ public class Control : MonoBehaviour
     {
         switch (currentDirection)
         {
-            case direction.up:
+            case direction.Up:
                 horizontal = 0;
                 vertical = 1;
                 return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
-            case direction.down:
+            case direction.Down:
                 horizontal = 0;
                 vertical = -1;
                 return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
-            case direction.right:
+            case direction.Right:
                 horizontal = 1;
                 vertical = 0;
                 return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
-            case direction.left:
+            case direction.Left:
                 horizontal = -1;
                 vertical = 0;
                 return new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);

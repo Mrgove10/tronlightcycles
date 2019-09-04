@@ -81,7 +81,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &7933440859820516076
 BoxCollider:
@@ -108,11 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf68eba7d4f8b910799dcb3ec7693143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 1
   barrier: {fileID: 5984268383361668671, guid: 0ba5bb496564b872eb1ef8186d63284c, type: 3}
   barrierSpawnLocation: {fileID: 2034725040}
   runSpeed: 2
   wantedDirection: 0
-  currentDirection: 0
 --- !u!114 &9115271370777008858
 MonoBehaviour:
   m_ObjectHideFlags: 0
