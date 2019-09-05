@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79aeb68d-b769-404a-a373-e921653093b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CycleAcademy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CycleAcademy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CycleAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CycleAgent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NewPlayerBrain.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NewPlayerBrain.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RandomAI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RandomAI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Cycles.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Cucle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/RandomAI.cs.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAcademy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAcademy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerLearningBrain.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerLearningBrain.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerPlayerBrain.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerPlayerBrain.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tron Light Cycles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAgent.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +24,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Directions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerPlayerBrain.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAcademy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unused/Teleportation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C27E1515-D694-401C-B48E-82974E6D3497/98/39c0978a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAgent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Imports/Graphy - Ultimate Stats Monitor/Scene/Color Picker/G_CUIColorPicker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unused/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +50,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Control.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/CycleAcademy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/CycleAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Balls/Rl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAcademy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Balls/RollerAgent.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +114,7 @@
       <workItem from="1567542023261" duration="9796000" />
       <workItem from="1567599763079" duration="242000" />
       <workItem from="1567604378531" duration="9609000" />
-      <workItem from="1567630922506" duration="1580000" />
+      <workItem from="1567630922506" duration="4907000" />
     </task>
     <servers />
   </component>

@@ -329,7 +329,8 @@
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
             <e p="Balls" t="Include">
-              <e p="Rl.cs" t="Include" />
+              <e p="RollerAcademy.cs" t="Include" />
+              <e p="RollerAgent.cs" t="Include" />
             </e>
             <e p="cycles" t="Include">
               <e p="CycleAcademy.cs" t="Include" />
